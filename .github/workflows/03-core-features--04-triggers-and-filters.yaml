@@ -27,12 +27,12 @@ on:
   #   - cron: "0 0 * * *" # Midnight UTC
 
   ## Manual Trigger
-  workflow_dispatch:
+  # workflow_dispatch:
 jobs:
   echo-event:
     runs-on: ubuntu-24.04
     steps:
-      - name: Dump full event JSON
+      - name: Dump 
         run: |
           echo "=== $GITHUB_EVENT_NAME payload ==="
           cat "$GITHUB_EVENT_PATH"
