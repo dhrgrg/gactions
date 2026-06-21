@@ -1,1 +1,1 @@
-checked up not so goood
+checked up not so good
