@@ -1,10 +1,12 @@
 name: Hello World
 
+# events 
 on:
   workflow_dispatch:
 
+# runners+steps->run(commands which needs to execute)
 jobs:
-  say-hello-inline-bash:
+  say-hell:
     runs-on: ubuntu-24.04
     steps:
       - run: echo "Hello from an inline bash script in a GitHub Action Workflow!"
