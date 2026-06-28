@@ -52,10 +52,10 @@ jobs:
         working-directory: 04-advanced-features/caching/minimal-node-project
 
     steps:
-      - uses: actions/checkout@ff7abcd0c3c05ccf6adc123a8cd1fd4fb30fb493 # v5.0.0
-      - uses: actions/setup-node@d7a11313b581b306c961b506cfc8971208bb03f6 # v4.4.0
+      - uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # latest
+      - uses: actions/setup-node@48b55a011bda9f5d6aeb4c2d9c7362e8dae4041e # latest
         with:
-          node-version: 20
+          node-version: 24
           cache: npm
           # Point cache action at the specific lock-file path
           cache-dependency-path: 04-advanced-features/caching/minimal-node-project/package-lock.json
